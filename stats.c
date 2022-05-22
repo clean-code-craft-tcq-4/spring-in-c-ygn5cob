@@ -9,10 +9,12 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
-    int sum = 0;
+    float sum = 0;
+    printf("set length:%d",setlength);
     
-    for(int i = 0; i<= setlength; i++)
+    for(int i = 0; i< setlength; i++)
     {
+       printf("numberset[i]:%d",numberset[i]);
        sum = sum + numberset[i];
        if((s.max == 0) &&(s.min == 0))
        {

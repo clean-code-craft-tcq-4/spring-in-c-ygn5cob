@@ -1,5 +1,5 @@
-void emailAlerter(float maxThreshold, struct Stats computedStats);
-void ledAlerter(float maxThreshold, struct Stats computedStats);
+void emailAlerter();
+void ledAlerter();
 
 int emailAlertCallCount;
 int ledAlertCallCount;
